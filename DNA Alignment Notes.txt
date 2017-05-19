@@ -1,0 +1,18 @@
+For indexing genome:
+
+Used all (except toplevel) dna.chromosome fasta files
+	From ftp://ftp.ensembl.org/pub/release-88/fasta/canis_familiaris/dna/
+Used GTF from ftp://ftp.ensembl.org/pub/release-88/gtf/canis_familiaris/
+	ftp://ftp.ensembl.org/pub/release-88/gtf/canis_familiaris/Canis_familiaris.CanFam3.1.88.gtf.gz
+
+sudo ./STAR --runThreadN 2 --genomeSAindexNbases 10 --limitGenomeGenerateRAM 13000000000 --runMode genomeGenerate --genomeDir index_files --genomeFastaFiles Canis_familiaris.CanFam3.1.dna.chromosome.1.fa Canis_familiaris.CanFam3.1.dna.chromosome.2.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.3.fa Canis_familiaris.CanFam3.1.dna.chromosome.4.fa Canis_familiaris.CanFam3.1.dna.chromosome.5.fa Canis_familiaris.CanFam3.1.dna.chromosome.6.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.7.fa Canis_familiaris.CanFam3.1.dna.chromosome.8.fa Canis_familiaris.CanFam3.1.dna.chromosome.9.fa Canis_familiaris.CanFam3.1.dna.chromosome.10.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.11.fa Canis_familiaris.CanFam3.1.dna.chromosome.12.fa Canis_familiaris.CanFam3.1.dna.chromosome.13.fa Canis_familiaris.CanFam3.1.dna.chromosome.14.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.15.fa Canis_familiaris.CanFam3.1.dna.chromosome.16.fa Canis_familiaris.CanFam3.1.dna.chromosome.17.fa Canis_familiaris.CanFam3.1.dna.chromosome.18.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.19.fa Canis_familiaris.CanFam3.1.dna.chromosome.20.fa Canis_familiaris.CanFam3.1.dna.chromosome.21.fa Canis_familiaris.CanFam3.1.dna.chromosome.22.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.23.fa Canis_familiaris.CanFam3.1.dna.chromosome.24.fa Canis_familiaris.CanFam3.1.dna.chromosome.25.fa Canis_familiaris.CanFam3.1.dna.chromosome.26.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.27.fa Canis_familiaris.CanFam3.1.dna.chromosome.28.fa Canis_familiaris.CanFam3.1.dna.chromosome.29.fa Canis_familiaris.CanFam3.1.dna.chromosome.30.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.31.fa Canis_familiaris.CanFam3.1.dna.chromosome.32.fa Canis_familiaris.CanFam3.1.dna.chromosome.33.fa Canis_familiaris.CanFam3.1.dna.chromosome.34.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.35.fa Canis_familiaris.CanFam3.1.dna.chromosome.36.fa Canis_familiaris.CanFam3.1.dna.chromosome.37.fa Canis_familiaris.CanFam3.1.dna.chromosome.38.fa \
+Canis_familiaris.CanFam3.1.dna.chromosome.MT.fa Canis_familiaris.CanFam3.1.dna.chromosome.X.fa Canis_familiaris.CanFam3.1.dna.nonchromosomal.fa --sjdbGTFfile Canis_familiaris.CanFam3.1.88.gtf
